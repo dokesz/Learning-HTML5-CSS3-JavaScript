@@ -1,12 +1,23 @@
 body,
-html {
+html
+{
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  background-image: url("header.jpg");
+  background-color: black;
+  background-image: url("https://images.wallpaperscraft.com/image/single/laptop_cup_glasses_plant_114948_1920x1080.jpg");
 }
 
-h1 {
+p {
   color: white;
-  text-align: center;
+  font-size: 30px;
+  /*rotate: -30deg;*/
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
