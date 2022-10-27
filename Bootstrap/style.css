@@ -1,0 +1,8 @@
+.btn-danger {
+    background-color: orange;
+    border: 0;
+}
+
+.btn-danger:hover {
+    background-color: black;
+}
