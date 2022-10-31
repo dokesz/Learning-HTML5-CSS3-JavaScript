@@ -1,6 +1,6 @@
 .zone {
     padding:30px 50px;
-    margin:40px 60px;
+    /*margin:40px 60px;*/
     cursor:pointer;
     display:inline-block;
     color:#FFF;
@@ -8,6 +8,74 @@
     border-radius:4px;
     border:1px solid #bbb;
     transition: all 0.3s linear;
+}
+
+/*body {
+    margin: 0;
+}*/
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    font-size: 1rem;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer {
+    display: grid;
+}
+
+.blue {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    background-color: grey;
+}
+
+.green {
+    display: grid;
+    margin: 0;
+}
+
+.red {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+}
+
+.footer {
+    text-align: center;
 }
 
 .zone:hover {
