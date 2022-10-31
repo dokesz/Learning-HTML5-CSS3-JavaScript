@@ -48,40 +48,26 @@ a {
     height: 50vh;
 }
 
-img {
-    width: 200px;
-    height: 200px;
+/*Grid*/
+.grid-wrapper {
+    display: grid;
+    /*align-items: center;
+    justify-items: center;*/
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
-.header {
-    display: flex;
+.box > img{
     width: 100%;
 }
 
-.section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+.box {
+   background-color: grey;
+   padding: 120px;
+   margin: 20px;
 }
 
-.footer {
-    display: grid;
-}
-
-.blue {
-    align-items: center;
-    justify-items: center;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    background-color: grey;
-}
-
-.green {
-    display: grid;
-    margin: 0;
-}
+/*Footer*/
 
 .footer {
     text-align: center;
