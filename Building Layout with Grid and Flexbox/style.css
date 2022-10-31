@@ -39,6 +39,14 @@ a {
     text-decoration: none;
 }
 
+/*Cover*/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
 
 img {
     width: 200px;
@@ -54,12 +62,6 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
 }
 
 .footer {
@@ -79,13 +81,6 @@ img {
 .green {
     display: grid;
     margin: 0;
-}
-
-.red {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25rem;
 }
 
 .footer {
