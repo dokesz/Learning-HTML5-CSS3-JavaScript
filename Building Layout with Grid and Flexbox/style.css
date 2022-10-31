@@ -1,8 +1,12 @@
+body {
+    margin: auto 0;
+}
+
 .zone {
-    padding:30px 50px;
+    padding:20px 20px;
     /*margin:40px 60px;*/
     cursor:pointer;
-    display:inline-block;
+    /*display:inline-block;*/
     color:#FFF;
     font-size:2em;
     border-radius:4px;
@@ -10,9 +14,31 @@
     transition: all 0.3s linear;
 }
 
-/*body {
+/*Navbar*/
+.main-nav {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    font-size: 1.2rem;
     margin: 0;
-}*/
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 1rem;
+        padding: 0;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
 
 img {
     width: 200px;
@@ -22,18 +48,6 @@ img {
 .header {
     display: flex;
     width: 100%;
-}
-
-.left {
-    display: flex;
-    justify-content: left;
-    gap: 15px;
-    font-size: 1rem;
-}
-
-.right {
-    display: flex;
-    justify-content: flex-end;
 }
 
 .section {
