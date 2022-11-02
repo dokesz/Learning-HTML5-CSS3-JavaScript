@@ -17,3 +17,9 @@ function sing(song) {
 sing("laa dee daa");
 sing("helloooo");
 sing("backstreets back alright");
+
+function multiply(a, b) {
+   return a * b;
+}
+
+multiply(5,10);
