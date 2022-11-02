@@ -19,7 +19,10 @@ sing("helloooo");
 sing("backstreets back alright");
 
 function multiply(a, b) {
-   return a * b;
+    if(a > 10 || b > 10){
+        return "thats too hard";
+    } 
+    else return a * b;
 }
 
-multiply(5,10);
+alert(multiply(5,10));
