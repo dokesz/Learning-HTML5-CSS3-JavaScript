@@ -7,6 +7,8 @@ var user = {
     //we can use an array inside an object
     spells: ["abrakadabra", "boom", "flash"],
     //we can use functions here too
+    //function inside an object is called a "Method"
+    //this means shout is a "method" of "user"
     shout: function() {
         console.log("AHHHH!");
     }
