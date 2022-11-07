@@ -1,7 +1,6 @@
-var age = prompt("What is your age?");
-
 //function declaration
 function checkDriverAge() {
+    var age = prompt("What is your age?");
     if(age < 18) {
         alert("Sorry you are too yound to drive this car. Powering off");
     }
@@ -11,10 +10,11 @@ function checkDriverAge() {
     else alert("Congratulations on your first year of driving. Enjoy the ride!");
 }
 
-checkDriverAge(age);
+checkDriverAge();
 
 //function expression
 let checkDriverAge2 = function() {
+    var age = prompt("What is your age?");
     if(age < 18) {
         console.log("Sorry you are too yound to drive this car. Powering off");
     }
@@ -26,4 +26,14 @@ let checkDriverAge2 = function() {
 
 checkDriverAge2();
 
-console.log(age);
+/*
+//bonus
+function checkDriverAge(age) {
+    if(age < 18) {
+        console.log("Sorry you are too yound to drive this car. Powering off");
+    } 
+    else if (age > 18) {
+        console.log("Powering On. Enjoy the ride!");
+    } 
+    else console.log("Congratulations on your first year of driving. Enjoy the ride!");
+}*/
