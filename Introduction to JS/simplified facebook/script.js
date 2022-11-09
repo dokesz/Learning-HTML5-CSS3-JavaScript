@@ -27,13 +27,20 @@ var newsFeed = [
 var userNamePrompt = prompt("What is your username?");
 var passwordPrompt = prompt("What is your password?");
 
-function signIn(username, password) {
-    for (let index = 0; index < database.length; index++) {
-        if(username === database[index].username && 
-            password === database[index].password) {
-            console.log(newsFeed);
-        } else alert("Sorry, wrong username or password!");   
+function isUserValid(username, password) {
+    for (let i = 0; i < database.length; i++) {
+        if(username === database[i].username && 
+            password === database[i].password) {
+            return true;
+        } 
     }
+    return false;
+}
+
+function signIn(username, password) {
+    if(isUserValid(userNamePrompt, passwordPrompt) === true){
+        console.log(newsFeed);
+    } else alert("WRONG!!!");
 }
 
 signIn(userNamePrompt, passwordPrompt);
