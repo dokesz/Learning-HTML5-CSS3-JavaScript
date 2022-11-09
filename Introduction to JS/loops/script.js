@@ -11,8 +11,8 @@ var todos = [
     console.log(word);
 }*/
 
-todos.forEach(function(i) {
-    console.log(i);
+todos.forEach(function(todo, i) {
+    console.log(todo, i);
 })
 
 /*var counterOne = 0;
