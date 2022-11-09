@@ -17,3 +17,9 @@ while(counterOne < todos.length) {
     counterOne ++;
 }
 
+var counterOne = todos.length;
+while(counterOne >= 0) {
+    console.log(todos[counterOne]);
+    counterOne --;
+}
+
