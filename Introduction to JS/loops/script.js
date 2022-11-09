@@ -6,7 +6,14 @@ var todos = [
     "eat healthy"
 ];
 
-for (var i=0; i < todos.length; i++){
+/*for (var i=0; i < todos.length; i++){
     var word = todos[i] + "!";
     console.log(word);
+}*/
+
+var counterOne = 0;
+while(counterOne < todos.length) {
+    console.log(todos[counterOne]);
+    counterOne ++;
 }
+
