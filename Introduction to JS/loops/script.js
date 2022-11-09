@@ -6,14 +6,24 @@ var todos = [
     "eat healthy"
 ];
 
+var todosImportant = [
+    "cleen room!",
+    "brush teeth!", 
+    "exercise!",
+    "study javascript!",
+    "eat healthy!"
+];
 /*for (var i=0; i < todos.length; i++){
     var word = todos[i] + "!";
     console.log(word);
 }*/
 
-todos.forEach(function(todo, i) {
+function logTodos(todo, i) {
     console.log(todo, i);
-})
+}
+
+todos.forEach(logTodos);
+todosImportant.forEach(logTodos);
 
 /*var counterOne = 0;
 while(counterOne < todos.length) {
