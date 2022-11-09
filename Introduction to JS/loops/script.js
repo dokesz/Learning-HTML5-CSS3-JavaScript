@@ -23,6 +23,7 @@ while(counterOne >= 0) {
     counterOne --;
 }
 */
+
 var counterTwo = 10;
 do {
     console.log(counterTwo);
