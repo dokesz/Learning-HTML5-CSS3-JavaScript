@@ -11,6 +11,10 @@ var todos = [
     console.log(word);
 }*/
 
+todos.forEach(function(i) {
+    console.log(i);
+})
+
 /*var counterOne = 0;
 while(counterOne < todos.length) {
     console.log(todos[counterOne]);
@@ -23,9 +27,10 @@ while(counterOne >= 0) {
     counterOne --;
 }
 */
-
+/*
 var counterTwo = 10;
 do {
     console.log(counterTwo);
     counterTwo--;
 } while (counterTwo > 0);
+*/
