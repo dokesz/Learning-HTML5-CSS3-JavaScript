@@ -11,7 +11,7 @@ var todos = [
     console.log(word);
 }*/
 
-var counterOne = 0;
+/*var counterOne = 0;
 while(counterOne < todos.length) {
     console.log(todos[counterOne]);
     counterOne ++;
@@ -22,4 +22,9 @@ while(counterOne >= 0) {
     console.log(todos[counterOne]);
     counterOne --;
 }
-
+*/
+var counterTwo = 10;
+do {
+    console.log(counterTwo);
+    counterTwo--;
+} while (counterTwo > 0);
