@@ -5,5 +5,5 @@ button.addEventListener("click", function() {
 })
 
 button.addEventListener("mouseenter", function() {
-    console.log("CLICK!!");
+    console.log("mouse enter!!");
 })
