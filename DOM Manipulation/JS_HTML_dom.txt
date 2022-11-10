@@ -1,1 +1,3 @@
 https://www.w3schools.com/js/js_htmldom.asp
+
+https://developer.mozilla.org/en-US/docs/Web/Events
