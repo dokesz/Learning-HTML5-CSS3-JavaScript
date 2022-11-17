@@ -23,14 +23,18 @@ function addElementToList() {
     input.value = "";
 }
 
-button.addEventListener("click", function() {
-    if(inputValue() !== ""){
-       addElementToList();
+function addElementAfterClick() {
+        if(inputValue() !== "") {
+        addElementToList();
     }
-})
+}
 
-input.addEventListener("keypress", function() {
+function addElementAfterEnter() {
     if(inputValue() !== "" && event.code === "Enter"){
         addElementToList();
     }
-})
+}
+
+button.addEventListener("click", addElementAfterClick)
+
+input.addEventListener("keypress", addElementAfterEnter)
