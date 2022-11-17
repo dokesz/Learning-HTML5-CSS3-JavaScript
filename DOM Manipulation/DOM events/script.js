@@ -12,20 +12,25 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
+function inputValue() {
+    return input.value;
+}
+
+function addElementToList() {
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(input.value));
+    ul.appendChild(li);
+    input.value = "";
+}
+
 button.addEventListener("click", function() {
-    if(input.value !== ""){
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(input.value));
-        ul.appendChild(li);
-        input.value = "";
+    if(inputValue() !== ""){
+       addElementToList();
     }
 })
 
 input.addEventListener("keypress", function() {
-    if(input.value !== "" && event.code === "Enter"){
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(input.value));
-        ul.appendChild(li);
-        input.value = "";
+    if(inputValue() !== "" && event.code === "Enter"){
+        addElementToList();
     }
 })
