@@ -1,4 +1,4 @@
-var button = document.getElementsByTagName("button")[0];
+/*var button = document.getElementsByTagName("button")[0];
 
 button.addEventListener("click", function() {
     console.log("CLICK!!");
@@ -6,4 +6,14 @@ button.addEventListener("click", function() {
 
 button.addEventListener("mouseenter", function() {
     console.log("mouse enter!!");
+})*/
+
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");
+var ul = document.querySelector("ul");
+
+button.addEventListener("click", function() {
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode("testing"));
+    ul.appendChild(li);
 })
