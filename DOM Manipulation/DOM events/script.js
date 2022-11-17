@@ -20,3 +20,12 @@ button.addEventListener("click", function() {
         input.value = "";
     }
 })
+
+input.addEventListener("keypress", function() {
+    if(input.value !== "" && event.code === "Enter"){
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(input.value));
+        ul.appendChild(li);
+        input.value = "";
+    }
+})
