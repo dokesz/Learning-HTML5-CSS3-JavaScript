@@ -57,7 +57,6 @@ function addElementAfterEnter() {
 function removeElementFromList() {
     var button = document.querySelectorAll('li button');
     for (var i=0; i < button.length; i++){
-        console.log(button[i]);
         button[i].addEventListener('click', clearElement);
     }
 }
