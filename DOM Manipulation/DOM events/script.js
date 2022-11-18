@@ -12,7 +12,7 @@ var enterButton = document.getElementById("enter");
 var deleteButton = document.getElementById("deleteable");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
-var toggle = document.getElementById("clickable");
+var li = document.getElementsByTagName('li')
 
 function inputValue() {
     return input.value;
@@ -38,9 +38,20 @@ function addElementToList() {
         item.parentNode.removeChild(button);
     })
     //if list item is ready or done, cross line
-    li.addEventListener("click", function () {
-        li.style.textDecoration = "line-through";
-    });
+    liEvent();
+}
+
+//call function here too, for the starter list
+liEvent();
+
+function liEvent() {
+    for (let i = 0; i < li.length; i++) {
+        li[i].addEventListener("click", changeClass);
+    }
+}
+
+function changeClass() {
+    this.classList.toggle('done');
 }
 
 function addElementAfterClick() {
@@ -56,6 +67,9 @@ function addElementAfterEnter() {
 }
 
 function removeElementFromList() {
+    for (var i=0; i < li.length; i++){
+        ul.removeChild(li);
+    }
     /*var li = document.getElementById("delete");
     console.log(li);
     //var ul = document.getElementById("deleteable");
@@ -66,4 +80,4 @@ enterButton.addEventListener("click", addElementAfterClick);
 
 input.addEventListener("keypress", addElementAfterEnter);
 
-deleteButton.addEventListener("click", removeElementFromList);
+//deleteButton.addEventListener("click", removeElementFromList);
