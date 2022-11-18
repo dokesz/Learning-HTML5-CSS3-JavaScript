@@ -1,18 +1,14 @@
-/*var button = document.getElementsByTagName("button")[0];
-
-button.addEventListener("click", function() {
-    console.log("CLICK!!");
-})
-
-button.addEventListener("mouseenter", function() {
-    console.log("mouse enter!!");
-})*/
-
 var enterButton = document.getElementById("enter");
-var deleteButton = document.getElementById("deleteable");
+var deleteButton = document.getElementsByTagName("button");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 var li = document.getElementsByTagName('li')
+
+//call function here too, for the starter list
+liEvent();
+
+//deletefunc
+removeElementFromList();
 
 function inputValue() {
     return input.value;
@@ -29,20 +25,12 @@ function addElementToList() {
     button = document.createElement("button");
     var button_text = document.createTextNode("Delete"); 
     button.appendChild(button_text);
-    ul.appendChild(button);
+    li.appendChild(button);
     //delete new items
-    button.addEventListener("click", function(){
-        var item = document.getElementById("delete");
-        console.log(li);
-        item.parentNode.removeChild(li);
-        item.parentNode.removeChild(button);
-    })
+    removeElementFromList();
     //if list item is ready or done, cross line
     liEvent();
 }
-
-//call function here too, for the starter list
-liEvent();
 
 function liEvent() {
     for (let i = 0; i < li.length; i++) {
@@ -67,17 +55,19 @@ function addElementAfterEnter() {
 }
 
 function removeElementFromList() {
-    for (var i=0; i < li.length; i++){
-        ul.removeChild(li);
+    var button = document.querySelectorAll('li button');
+    for (var i=0; i < button.length; i++){
+        console.log(button[i]);
+        button[i].addEventListener('click', clearElement);
     }
-    /*var li = document.getElementById("delete");
-    console.log(li);
-    //var ul = document.getElementById("deleteable");
-    li.parentNode.removeChild(li);*/
+}
+
+function clearElement() {
+    for (var i=0; i < li.length; i++){
+        this.parentNode.remove();
+    }
 }
 
 enterButton.addEventListener("click", addElementAfterClick);
 
 input.addEventListener("keypress", addElementAfterEnter);
-
-//deleteButton.addEventListener("click", removeElementFromList);
