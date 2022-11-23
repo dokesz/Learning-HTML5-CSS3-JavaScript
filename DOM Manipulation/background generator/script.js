@@ -4,13 +4,17 @@ var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var button = document.querySelector(".button");
 
-function setGradient() {
+function bodyStyle(value1, value2) {
 	body.style.background = 
 	"linear-gradient(to right, " 
-	+ color1.value 
+	+ value1 
 	+ ", " 
-	+ color2.value 
+	+ value2 
 	+ ")";
+}
+
+function setGradient() {
+	bodyStyle(color1.value, color2.value);
 
 	textContent();
 }
@@ -26,12 +30,7 @@ function hexGenerator(){
 }
 
 function randomBackground(){
-	body.style.background = 
-	"linear-gradient(to right, #" 
-	+ hexGenerator()
-	+ ", #" 
-	+ hexGenerator()
-	+ ")";
+	bodyStyle("#" + hexGenerator(), "#" + hexGenerator());
 
 	textContent();
 }
