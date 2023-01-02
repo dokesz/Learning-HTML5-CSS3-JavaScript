@@ -46,3 +46,12 @@ function moveCommand(direction) {
 //#5 return value when moveCommand("left");
 
 //BONUS: practice makes perfect. Go and write your own switch function. It takes time to get used to the syntax!
+//moricka
+function ownSwitch(number){
+    switch(number){
+        case 1:
+            console.log(11);
+            break;
+        default: console.log('Adj meg egy szamot')
+    }
+}
