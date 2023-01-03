@@ -55,3 +55,13 @@ function ownSwitch(number){
         default: console.log('Adj meg egy szamot')
     }
 }
+
+let age = 18;
+
+function canIDrive(age){
+  switch (age){
+    case 18: window.alert("You can drive!");
+    break;
+    default: window.log("You can't drive!");
+  }
+}
