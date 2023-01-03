@@ -55,3 +55,11 @@ const greetingBest = `Hello ${a} you seem to be ${b}, and do you have ${experien
 function greet(Name='', Age=30, pet='cat'){
    return `Hello ${Name} you seem to be ${Age-16}, and you have a ${pet}`;
 }
+
+//arrow function
+
+function add(a,b){
+    return a+b;
+}
+
+const add = (a, b) => a + b;
