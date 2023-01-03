@@ -51,3 +51,7 @@ const greeting = 'Hello' + name + ' you semm to be doing' + great + ' ...';
 
 //backtick altgr+7
 const greetingBest = `Hello ${a} you seem to be ${b}, and do you have ${experience-16}`;
+
+function greet(Name='', Age=30, pet='cat'){
+   return `Hello ${Name} you seem to be ${Age-16}, and you have a ${pet}`;
+}
