@@ -44,3 +44,10 @@ const obj2 = {
     b,
     c
 }
+
+//template strings
+
+const greeting = 'Hello' + name + ' you semm to be doing' + great + ' ...';
+
+//backtick altgr+7
+const greetingBest = `Hello ${a} you seem to be ${b}, and do you have ${experience-16}`;
