@@ -67,3 +67,20 @@ const newArray = arrayNum.map((num /*, i*/) => {
 });
 
 //BONUS: create a new list with all user information, but add "!" to the end of each items they own.
+const answer = array.map(user => {
+	user.items = user.items.map(item => {
+		return item + "!"
+	});
+	return user;
+})
+console.log(answer);
+
+//this is just return the items array with exclamation mark 
+/*const vmi = array.map(user => {
+for (let i = 0; i < user.items.length; i++) {
+    return user.items + '!';
+  }
+  return element;
+})
+
+console.log(vmi);*/
