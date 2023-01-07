@@ -27,5 +27,13 @@ let obj = {
   is: 'Rudolf',
   the: 'raindeer'
 }
+
+/*Object.entries(obj).forEach(value => {
+  console.log(value[0] + ' ' + value[1]);
+})
+
 // to this:
-'my name is Rudolf the raindeer'
+'my name is Rudolf the raindeer'*/
+
+Object.entries(obj).map(value => value.join(" ")).join(' ')
+
