@@ -14,3 +14,7 @@ let obj = {
 Object.keys(obj).forEach((key, index) => {
     console.log(key, obj[key]);
 })
+
+Object.values(obj).forEach(value => {
+    console.log(value, obj[value]);
+})
