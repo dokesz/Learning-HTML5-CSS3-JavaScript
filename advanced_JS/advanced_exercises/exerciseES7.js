@@ -8,9 +8,10 @@ dragons.includes("John"); //false
 // name or names in an array.
 const dragons = ["Tim", "Johnathan", "Sandy", "Sarah"];
 
-const findJohn = dragons.filter((name) => name.includes("John")); //true
+const findJohn = dragons.filter((name) => name.includes("John")); //[Johnatan]
 // #3) Create a function that calulates the power of 100 of a number entered as a parameter
-let calculatePoweOf100 = (x) => x**100;
+let calculatePoweOf100 = (num) => num**100;
 // #4) Useing your function from #3, put in the paramter 10000. What is the result?
 // Research for yourself why you get this result
-//return Infinity
+
+calculatePoweOf100(10000); //return Infinity
