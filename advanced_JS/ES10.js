@@ -34,7 +34,7 @@ try {
 
 try {
     bob + 'hi'
-} catch {
-    console.log('you messed up');
+} catch (error) {
+    console.log('you messed up' + error);
 }
 // 'you messed up'
