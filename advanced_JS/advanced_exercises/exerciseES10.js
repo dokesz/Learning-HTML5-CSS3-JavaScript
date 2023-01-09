@@ -9,21 +9,24 @@ array.flat(2);
 const greeting = [["Hello", "young", "grasshopper!"], ["you", "are"], ["learning", "fast!"]];
 
 const newArr = greeting.flatMap(element => element.join(" "));
-
+console.log(newArr);
 //#3 Turn the greeting array above into a string: 'Hello young grasshopper you are learning fast!'
 
 /*let text =*/ newArr.join();
 //console.log(text);
+// or
+// greeting.flatMap(element => element.join(' ')).join(' ');
 
 //#4 Turn the trapped 3 number into: [3]
 const trapped = [[[[[[[[[[[[[[[[[[[[[[[[[[3]]]]]]]]]]]]]]]]]]]]]]]]]];
 
 trapped.flat(50)
+//console.log(trapped.flat(Infinity))
 
 //#5 Clean up this email to have no whitespaces. Make the answer be in a single line (return a new string):
 const userEmail3 = '     cannotfillemailformcorrectly@gmail.com   '
 
-console.log(userEmail3.trimStart());
+console.log(userEmail3.trimStart().trimEnd());
 
 //#6 Turn the below users (value is their ID number) into an array: [ [ 'user1', 18273 ], [ 'user2', 92833 ], [ 'user3', 90315 ] ]
 const users = { user1: 18273, user2: 92833, user3: 90315 }
