@@ -23,3 +23,18 @@ userProfiles = [['commanderTom', 23], ['derekZlander', 40], ['hansel', 18]];
 const obj = Object.fromEntries(userProfiles);
 Object.entries(obj);
 
+//trycatch
+
+try {
+    true + 'hi';
+} catch {
+    console.log('you messed up');
+}
+//'truehi'
+
+try {
+    bob + 'hi'
+} catch {
+    console.log('you messed up');
+}
+// 'you messed up'
