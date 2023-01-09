@@ -8,3 +8,9 @@ array2.flat();
 const array3 = [1,2,[3,4,[5]]];
 // i can tell the method how many layers i want to fly in the array (default is 1, but its not working here)
 array3.flat(2);
+
+const userEmail = "        eddytheeagle@gmail.com";
+const userEmail2 = 'jonnysmt@gmail.com     ';
+
+console.log(userEmail.trimStart());
+console.log(userEmail2.trimEnd()); 
