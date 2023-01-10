@@ -69,4 +69,12 @@ amazonBasket = {
   floss: 100,
 };
 
-function checkBasket(basket, lookingFor) {}
+function checkBasket(basket, lookingFor) {
+  for (item in basket) {
+    if(item === lookingFor){
+      return `There you are: ${lookingFor}`;
+    } else console.log('Item not found!');
+  }
+}
+
+checkBasket(amazonBasket, 'glasses');
